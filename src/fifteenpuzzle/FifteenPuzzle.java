@@ -129,13 +129,12 @@ public class FifteenPuzzle {
             return null;
         }
     }
-    else
-    {  
-     System.out.println("EL PUZZLE NO TIENE SOLUCIÓN :/");
-     System.exit(0);        
-     return null;
-   }
-  }
+        else
+        {  
+            System.out.println("EL PUZZLE NO TIENE SOLUCIÓN :/");
+            System.exit(0);        
+            return null;
+     }
      public boolean esFinal(Nodo n)
      {
          if(n.toString().compareTo(nodoFin.toString())==0)
@@ -146,7 +145,7 @@ public class FifteenPuzzle {
      }
         
      public int sol(int array[],int f)
-    {
+     {
         int inversor=0; 
         for (int a=0;a<=15;a++)
         {
